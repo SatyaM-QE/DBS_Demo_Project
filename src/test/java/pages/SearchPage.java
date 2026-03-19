@@ -9,6 +9,7 @@ import main.CucumberRunner;
 
 public class SearchPage extends CucumberRunner {
 
-    
-   
+    public static void main(String[] args) {
+		System.out.println("just testing");
+	}
 }
