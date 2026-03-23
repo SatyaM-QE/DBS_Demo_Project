@@ -11,8 +11,8 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
+import runner.CucumberRunner;
 import utils.GetDataFromProperty;
-import main.CucumberRunner;
 
 public class EveningCheapTrip extends CucumberRunner{
 	

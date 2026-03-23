@@ -6,7 +6,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
 import cucumber.api.java.en.Then;
-import main.CucumberRunner;
+import runner.CucumberRunner;
 import utils.GetDataFromProperty;
 
 public class LowestPrice extends CucumberRunner{

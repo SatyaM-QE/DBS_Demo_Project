@@ -1,4 +1,4 @@
-package pages;
+package utils;
 
 import java.awt.AWTException;
 import java.awt.Robot;

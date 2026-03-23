@@ -3,7 +3,7 @@ package stepdefinition;
 import org.testng.Assert;
 
 import cucumber.api.java.en.Given;
-import main.CucumberRunner;
+import runner.CucumberRunner;
 
 public class OpenWebSite extends CucumberRunner {
 

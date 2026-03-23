@@ -1,4 +1,4 @@
-package main;
+package runner;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -36,7 +36,7 @@ import helpers.ReportHelper;
                  features = "src/test/resources/features", 
                  glue = "stepdefinition", 
                  format = {"pretty","json:target/cucumber.json"}, 
-                 tags = { "@Regression,@TestngScenario,@GetLowestFailAndDuration,@RoundTrip" })
+                 tags = { "@Regression,@GetLowestFailAndDuration,@RoundTrip" })
 
 public class CucumberRunner extends AbstractTestNGCucumberTests {
 
@@ -78,7 +78,8 @@ public class CucumberRunner extends AbstractTestNGCucumberTests {
 		configureDriverPath();
 		if (config.getProperty("browserType").equals("firefox")) {
 			driver = new FirefoxDriver();
-		} else if (config.getProperty("browserType").equals("chrome")) {
+		} 
+		else if (config.getProperty("browserType").equals("chrome")) {
 			ChromeOptions options = new ChromeOptions();
 			options.addArguments("--headless");
 			options.addArguments("--disable-gpu");
